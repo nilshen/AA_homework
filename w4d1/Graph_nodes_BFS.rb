@@ -18,7 +18,7 @@ attr_accessor :value, :neighbors
 
         until queue.empty?
                 node = queue.shift
-            unless visited.include?(node)   # why this line?
+            unless visited.include?(node)   # why this line? unless == if !include?
                 return node.value if node.value == target
                 visited.add(node)
                 queue += node.neighbors
