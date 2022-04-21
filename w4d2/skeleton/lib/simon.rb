@@ -36,7 +36,7 @@ class Simon
   def require_sequence
     @seq.each do |color|
       user_color = gets.chomp
-      if color[0] != user_color
+      if color != user_color
         @game_over = true
         break
       end
@@ -64,3 +64,5 @@ end
 
 # COLORS = %w(red blue green yellow)
 # p COLORS.sample
+
+
