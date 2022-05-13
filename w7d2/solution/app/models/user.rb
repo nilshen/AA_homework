@@ -10,7 +10,7 @@ class User < ApplicationRecord
 
   has_many :cats
 
-  after_initialize :ensure_session_token
+  after_initialize :ensu on_token
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
